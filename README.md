@@ -1,2 +1,3 @@
 # Zombie-Watch
 Zombie movie ratings
+Worked on fixed background, had some alignment issues - all fixed...
