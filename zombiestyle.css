@@ -1,0 +1,8 @@
+#zombieblood{
+    background-image: url("blood_splatter_and_zombie_background.gif");
+    background-size: 100%;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 30%;
+}
