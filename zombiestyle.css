@@ -1,6 +1,7 @@
 html, body{
     width: 100%;
     height: 100%;
+    margin: 0;
 }
 
 #bgimg{
@@ -11,26 +12,94 @@ html, body{
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    font-family: arial, sans-serif;
+    position: fixed;
+    display: block;
+}
+
+#layout{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.header{
+    background: rgba(0, 0, 0, 0.7);
+    height: 20%;
+    margin: 0;
+    font-family: monospace, Courier New, Courier, monospace;
+    text-align: center;
+    border-bottom: 1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 300%;
+}
+
+.header a{
+    text-decoration: none;
+    height: 100%;
+}
+
+.nav{
+    width: 100%;
+    height: 5%;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid white;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.nav li{
+    list-style: none;
+    display: inline;
+    padding: 1%;
+    flex: 1;
+    font-size: 95%;
     text-align: center;
 }
 
-#nav{
-    Width: 60%;
-    height: 5%;
-    background-color: black;
-    opacity: 0.5;
-    
-}
-
-#nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 1%;
-}
-
-#nav ul li a{
+.nav a{
+    width: 100%;
     color: white;
+    font-family: arial, sans-serif;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 130%;
+}
 
+nav li:hover{
+    background: rgba(192, 192, 192, 0.5);
+}
+
+p{
+    display: block;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 3% 7% 3% 7%;
+    color: white;
+    border-bottom: 1px solid white;
+    line-height: 190%;
+    font-size: 110%;
+    font-family: arial, sans-serif;
+    text-align: justify;
+}
+
+footer{
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 10%;
+    padding: 2%;
+    text-align: center;
 }
