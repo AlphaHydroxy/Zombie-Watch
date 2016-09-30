@@ -11,35 +11,25 @@
     <!--Define the author of the page-->
     <meta name="author" content="Jia Wong">
     <!--Referesh document every 30 seconds-->
-    <meta http-equiv="refresh" content="60 ">
-    <link rel="stylesheet " type="text/css " href="zombiestyle.css">
+    <meta http-equiv="refresh" content=" ">
+    <link rel="stylesheet" type="text/css" href="zombiestyle.css">
 </head>
 
 <body>
-    <div class="fixed-top ">
+    <div class="fixed-top">
         <header>
             <h1>Zombie Watch</h1>
         </header>
         <nav>
-            <ul class="showing ">
-                <a href="# ">
-                    <li>Home</li>
-                </a>
-                <a href="# ">
-                    <li>About</li>
-                </a>
-                <a href="# ">
-                    <li>Movies A-Z</li>
-                </a>
-                <a href="# ">
-                    <li>Fave Bits</li>
-                </a>
-                <a href="# ">
-                    <li>Contact Us</li>
-                </a>                
+            <ul id="dropdown">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Movies A-Z</li></a>
+                <a href="#"><li>Fave Bits</li></a>
+                <a href="#"><li>Contact Us</li></a>                
             </ul>
             <div>
-                <div class="handle">Menu
+                <div class="handle" onclick="toggleDropdown(this)">Menu
                     <div id="icon">
                         <div></div>
                         <div></div>
@@ -50,7 +40,7 @@
         </nav>
     </div>
 
-    <div class="bgimg "></div>
+    <div class="bgimg"></div>
     <div class="section-margin">
         <section>
             Lorem ipsum dolor sit amet, hendrerit vitae lorem, massa erat mauris. Semper ultrices vivamus bibendum. Pellentesque faucibus
@@ -125,6 +115,7 @@
         </section>
     </div>
     <footer>Metus tortor consequat lorem. Nec neque elit sit cras&copy;</footer>
+    <script type="text/javascript" src="zombiescript.js"></script>
 </body>
 
 </html>
